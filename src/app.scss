@@ -16,16 +16,27 @@ body {
     background: $bgColor;
 }
 
-h1 {
+h1, h2 {
     color: $mainColor;
     text-align: center;
+    margin: $spacingUnit*2 0;
+    transition: opacity 0.5s;
+}
+
+h2 {
     margin: $spacingUnit 0;
 }
+
+p {
+    color: $secondaryColor;
+    margin: $spacingUnit 0;
+}
+
 
 button {
     width: calc(100% - 100px);
     height: 50px;
-    margin: 0 ($spacingUnit * 5);
+    margin: $spacingUnit*2 $spacingUnit*5;
     text-align: center;
     color: $secondaryColor;
     background-color: $mainColor;
