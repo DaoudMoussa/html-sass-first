@@ -93,7 +93,10 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+var isVisible = true;
+document.getElementById('button').addEventListener('click', function () {
+  document.getElementById('title').classList.toggle('hidden');
+});
 
 /***/ }),
 

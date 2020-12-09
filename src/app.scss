@@ -1,5 +1,38 @@
+// Variabili
+$mainColor: #e4a2f3;
+$secondaryColor: #5422a3;
+$bgColor: black;
+$spacingUnit: 10px;
+
+// Inizio css
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: $bgColor;
+}
+
+h1 {
+    color: $mainColor;
+    text-align: center;
+    margin: $spacingUnit 0;
+}
+
+button {
+    width: calc(100% - 100px);
+    height: 50px;
+    margin: 0 ($spacingUnit * 5);
+    text-align: center;
+    color: $secondaryColor;
+    background-color: $mainColor;
+    border-radius: $spacingUnit / 2;
+    border: 2px solid $secondaryColor;
+}
+
+.hidden {
+    opacity: 0;
 }
